@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+
+    <form>
+
+        <label for="name">Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name" name="name">
+        <br><br>
+
+        <label for="email">Email</label><br>
+        <input id="email" type="email" placeholder="Enter your email" name="email">
+        <br><br>
+
+        <label for="pass">Password</label><br>
+        <input id="pass" type="password" name="password">
+        <br><br>
+
+        <label for="phone">Phone No.</label><br>
+        <input id="phone" type="tel" name="phone" placeholder="Enter phone number">
+        <br><br>
+
+        <label for="date">Date</label><br>
+        <input id="date" type="date" name="date">
+        <br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+        <section>
+        <label>Skills</label><br>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label>
+        <br><br>
+        </section>
+        <section>
+        <label for="course">Select Course</label><br>
+        <select id="course" name="course">
+            <option value="">--Select--</option>
+            <option value="cse">Computer Science</option>
+            <option value="ece">Electronics</option>
+            <option value="it">Information Technology</option>
+        </select>
+        </section>
+        <br><br>
+        <input type="file" name="file">
+        <br>
+        <input type="range" max="3" min="0">
+
+        </input>
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+        <!-- <h1>http://127.0.0.1:3000/index.html?name=Anshika+Saraswat&email=sarawat.anshika156%40gmail.com&password=642501&phone=9950521185&date=2026-08-11&gender=Female&skills=HTML&skills=CSS&skills=JavaScript&course=cse</h1> -->
+
+    </form>
+
+</body>
+</html>
