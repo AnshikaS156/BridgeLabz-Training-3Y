@@ -1,0 +1,155 @@
+/* Q1 - Personal Portfolio */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 72px;
+    padding: 1rem 5%;
+    background: #172033;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    min-height: 75vh;
+    margin-top: 72px;
+    padding: 8vh 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    background: #dfeeff;
+}
+
+.hero > div {
+    width: 55%;
+}
+
+.hero h2 {
+    font-size: 4vw;
+    margin: 0.5rem 0;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.tagline {
+    font-size: 0.9rem !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero img {
+    width: 30%;
+    max-width: 280px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+}
+
+.about,
+.contact {
+    padding: 6vh 8%;
+    margin: 2rem auto;
+    width: 84%;
+    border-radius: 12px;
+    background: white;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+}
+
+.about p,
+.contact p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+footer {
+    min-height: 80px;
+    padding: 1.5rem;
+    background: #172033;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        gap: 0.7rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero > div {
+        width: 100%;
+    }
+
+    .hero img {
+        width: 55%;
+    }
+}
