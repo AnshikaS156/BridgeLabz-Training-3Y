@@ -1,0 +1,107 @@
+/* Q5: Advanced CSS Selectors Demonstration */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #0f172a;
+    color: white;
+}
+
+header h1,
+header p,
+footer p {
+    margin: 0.3rem;
+}
+
+.selector-demo {
+    width: min(850px, 90%);
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.12);
+}
+
+/* Attribute selector: selects inputs whose type is exactly "text". */
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+/* Attribute selector: selects links whose href begins with "https". */
+a[href^="https"] {
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+}
+
+/* Pseudo-class :hover changes the list item on mouse hover. */
+.item-list li:hover {
+    background: #dbeafe;
+}
+
+/* Pseudo-class :focus styles the text input while focused. */
+input[type="text"]:focus {
+    outline: 3px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* Pseudo-class :nth-child() targets every second list item. */
+.item-list li:nth-child(even) {
+    background: #f1f5f9;
+}
+
+/* Pseudo-element ::before adds generated content before the heading. */
+.selector-demo h2::before {
+    content: "★ ";
+    color: #f59e0b;
+}
+
+/* Pseudo-element ::after adds generated content after the heading. */
+.selector-demo h2::after {
+    content: " ★";
+    color: #f59e0b;
+}
+
+/* Child combinator > selects only direct child paragraphs. */
+.direct-child > p {
+    padding: 0.8rem;
+    border-left: 4px solid #2563eb;
+}
+
+/* Descendant combinator selects any paragraph inside .controls. */
+.controls p {
+    line-height: 1.6;
+}
+
+/* Adjacent sibling + selects the span immediately after .group. */
+.group + span {
+    display: inline-block;
+    padding: 0.5rem;
+    background: #dcfce7;
+}
+
+/* General sibling ~ selects siblings following .group. */
+.group ~ span {
+    border-radius: 6px;
+}
+
+/* Descendant and structural selector used together for clarity. */
+.item-list li {
+    padding: 0.75rem;
+    margin: 0.25rem 0;
+    list-style-position: inside;
+}

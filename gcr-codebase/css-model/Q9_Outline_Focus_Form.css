@@ -1,0 +1,99 @@
+/* Q9: Outline and Focus Styling Form */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #1e293b;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #1e1b4b;
+    color: white;
+}
+
+header h1,
+header p,
+footer p {
+    margin: 0.3rem;
+}
+
+.form-section {
+    width: min(520px, 90%);
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(30, 41, 59, 0.14);
+}
+
+.form-section h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.85rem;
+    font: inherit;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(15, 23, 42, 0.08);
+}
+
+/* Different outline styles demonstrate outline and outline-offset. */
+input {
+    outline: 2px solid transparent;
+    outline-offset: 3px;
+}
+
+textarea {
+    outline: 2px dashed transparent;
+    outline-offset: 4px;
+}
+
+/* :focus changes outline color when a form control receives focus. */
+input:focus {
+    outline-color: #2563eb;
+    border-color: #2563eb;
+}
+
+textarea:focus {
+    outline-color: #16a34a;
+    border-color: #16a34a;
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 0;
+    border-radius: 8px;
+    background: #4338ca;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(67, 56, 202, 0.25);
+}
+
+button:focus {
+    outline: 3px solid #f59e0b;
+    outline-offset: 4px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <link rel="stylesheet" href="Q5_Advanced_CSS_Selectors.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS Selectors</h1>
+        <p>Attribute selectors, pseudo-classes, pseudo-elements, and combinators.</p>
+    </header>
+
+    <main>
+        <section class="selector-demo" aria-labelledby="items-title">
+            <h2 id="items-title">Item List</h2>
+            <ul class="item-list">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+            </ul>
+
+            <div class="controls">
+                <label for="name">Text input:</label>
+                <input id="name" type="text" placeholder="Focus on me">
+
+                <p>Visit an <a href="https://example.com">external secure link</a>.</p>
+                <p class="group">This paragraph demonstrates descendant and sibling selectors.</p>
+                <span>Adjacent/sibling content</span>
+            </div>
+
+            <div class="direct-child">
+                <p>This is a direct child and is styled using &gt;.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Assignment 7 &mdash; Question 5</p>
+    </footer>
+</body>
+</html>
