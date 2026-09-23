@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f7fb; color: #222; }
+header { text-align: center; padding: 25px; background: #243b55; color: white; }
+.examples { display: flex; gap: 20px; justify-content: center; padding: 40px 5%; flex-wrap: wrap; }
+.example { background: white; padding: 22px; width: 220px; text-align: center; border-radius: 12px; box-shadow: 0 4px 12px #0002; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { color: #dc2626; background: #fee2e2; }
+button { padding: 10px 16px; border: 0; border-radius: 7px; background: #2563eb; color: white; cursor: pointer; }
+button:focus { outline: 3px solid #93c5fd; outline-offset: 3px; }
+button:active { background: #15803d; transform: scale(.96); }
+li { padding: 8px; list-style: none; }
+li:nth-child(2) { background: #fde68a; border-radius: 5px; }
