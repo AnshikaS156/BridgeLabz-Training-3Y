@@ -1,0 +1,8 @@
+:root {
+  --bs-primary: #7c3aed;
+  --bs-font-sans-serif: 'Inter', sans-serif;
+}
+body { font-family: var(--bs-font-sans-serif); color: #1f2937; }
+.btn-primary { background-color: var(--bs-primary); border-color: var(--bs-primary); }
+.badge { background: #ede9fe; color: #6d28d9; }
+.card { border-radius: 1rem; overflow: hidden; }
