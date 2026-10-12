@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; }
+.hero { background: linear-gradient(135deg, #f8fbff, #eef5ff); }
+.min-vh-75 { min-height: 75vh; }
+.hero-card { background: white; border: 1px solid #e5e7eb; }
+.card { border: 0; box-shadow: 0 4px 16px rgba(0,0,0,.06); }
