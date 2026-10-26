@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1 id="heading">0</h1>
+    <button id="inc">Increment</button>
+    <button id="dec">Decrement</button>
+
+    <script>
+        const incEL = document.querySelector("#inc");
+        const decEL = document.querySelector("#dec");
+        const headingEl = document.querySelector("#heading");
+
+        let count = 0;
+
+        incEL.addEventListener("click", () => {
+            count++;
+            headingEl.textContent = count;
+        });
+
+        decEL.addEventListener("click", () => {
+            count--;
+            headingEl.textContent = count;
+        });
+    </script>
+</body>
+</html>
