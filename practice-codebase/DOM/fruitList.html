@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit List</title>
+</head>
+<body>
+
+    <h1>My Fruit List</h1>
+
+    <input type="text" id="fruitInput" placeholder="Enter a fruit">
+    <button id="addBtn">Add Fruit</button>
+
+    <ul id="fruitList"></ul>
+
+    <script>
+        const fruitInput = document.querySelector("#fruitInput");
+        const addBtn = document.querySelector("#addBtn");
+        const fruitList = document.querySelector("#fruitList");
+
+        addBtn.addEventListener("click", () => {
+            let fruit = fruitInput.value.trim();
+
+            if (fruit !== "") {
+                let liEl = document.createElement("li");
+                liEl.textContent = fruit;
+
+                fruitList.appendChild(liEl);
+
+                fruitInput.value = "";
+            }
+        });
+    </script>
+
+</body>
+</html>
